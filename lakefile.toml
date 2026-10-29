@@ -1,0 +1,20 @@
+name = "graph_extremal"
+version = "0.1.0"
+keywords = ["math", "mathlib", "graph-theory", "extremal-combinatorics"]
+defaultTargets = ["GraphExtremal"]
+requiresModuleSystem = true
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.35.0-rc3"
+
+[[lean_lib]]
+name = "GraphExtremal"
+globs = ["GraphExtremal.*"]
